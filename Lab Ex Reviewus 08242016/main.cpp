@@ -7,9 +7,36 @@
 //
 
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+# define prog 1
+
+#if(prog == 1)
+
+int main() {
+    
+    cout << "Convert Celsius to Farenheit 911 \n";
+    
+    // Initialize data storage
+    double celsius = 0.0, farenheit = 0.0;
+    
+    // Input
+    cout << "Enter a degree: ";
+    cin >> celsius;
+    
+    // Processing
+    farenheit = (static_cast<double>(9) / 5) * celsius + 32;
+    
+    // Output
+    cout << "The temperature is " << farenheit << "°F" << endl;
+    
+    
     return 0;
 }
+
+
+#elif(prog == 2)
+
+
+
+#endif
