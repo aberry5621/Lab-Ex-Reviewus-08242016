@@ -6,13 +6,12 @@
 //  Copyright © 2016 COMP130. All rights reserved.
 //
 
-#include <iostream>
-#include <cmath>
-using namespace std;
-
-# define prog 2
+# define prog 4
 
 #if(prog == 1)
+
+#include <iostream>
+using namespace std;
 
 int main() {
     
@@ -35,8 +34,11 @@ int main() {
     return 0;
 }
 
-
 #elif(prog == 2)
+
+#include <iostream>
+#include <cmath>
+using namespace std;
 
 int main() {
     
@@ -61,5 +63,48 @@ int main() {
     return 0;
 }
 
+#elif(prog == 3)
+
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+
+int main() {
+    
+    cout << "Power Table \n";
+    
+    cout << "Table of Powers" << endl;
+    int w = 10;
+    double a = 0.0;
+    cout << setw(w) << "a" << setw(w) << "a^2" << setw(w) << "a^3" << endl;
+    a = 1.0;
+    cout << setw(w) << a << setw(w) << pow(a, 2) << setw(w) << pow(a, 3) << endl;
+    a = 2.0;
+    cout << setw(w) << a << setw(w) << pow(a, 2) << setw(w) << pow(a, 3) << endl;
+    a = 3.0;
+    cout << setw(w) << a << setw(w) << pow(a, 2) << setw(w) << pow(a, 3) << endl;
+    a = 4.0;
+    cout << setw(w) << a << setw(w) << pow(a, 2) << setw(w) << pow(a, 3) << endl;
+    
+    return 0;
+}
+
+#elif(prog == 4)
+
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+
+int main() {
+    
+    cout << "Compute Expression \n";
+
+    double a = 9.5, b = 4.5, c = 2.5, d = 3.0, e = 45.5, f = 3.5;
+    cout << ((a * b) - (c * d)) / (e -f) << endl;
+    
+    return 0;
+}
 
 #endif
