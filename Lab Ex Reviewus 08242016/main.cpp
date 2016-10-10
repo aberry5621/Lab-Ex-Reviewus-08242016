@@ -7,9 +7,10 @@
 //
 
 #include <iostream>
+#include <cmath>
 using namespace std;
 
-# define prog 1
+# define prog 2
 
 #if(prog == 1)
 
@@ -37,6 +38,28 @@ int main() {
 
 #elif(prog == 2)
 
+int main() {
+    
+    cout << "Compute Volume of Cylinder \n";
+    
+    // Initialize data storage
+    double const PI = 3.14159;
+    double radius = 0.0, length = 0.0, area = 0.0, volume = 0.0;
+    
+    // Input
+    cout << "Enter the radius and length of a cylinder: ";
+    cin >> radius >> length;
+    
+    // Processing
+    area = pow(radius, 2.0) * PI;
+    volume = area * length;
+    
+    // Output
+    cout << "AREA: " << area << endl;
+    cout << "VOLUME: " << volume << endl;
+    
+    return 0;
+}
 
 
 #endif
